@@ -33,7 +33,6 @@ function init(){
 	$(document.body).on('route', function(e, name){
 		route(name);
 	});
-	route('home');
 }
 
 module.exports = {

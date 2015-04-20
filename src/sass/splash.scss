@@ -89,5 +89,25 @@
 	opacity:1;
   }
 
+  ul.suggestions{
+	margin:0;
+	padding:0;
+	border:1px #999999 solid;
+	border-radius: 5px;
+	list-style-type: none;
+
+	li{
+	  box-sizing: border-box;
+	  padding:0.5em;
+	  background-color:white;
+	  border-top:1px #999 solid;
+
+	  &:first-child{
+		border:0;
+	  }
+	}
+
+  }
+
 
 }

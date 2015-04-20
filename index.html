@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>FT | Great Place to Meet</title>
 	<link rel="stylesheet" href="public/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="public/handlebars-v3.0.1.js"></script>
 	<link href='http://fonts.googleapis.com/css?family=Ropa+Sans|Six+Caps' rel='stylesheet' type='text/css'>
 </head>
@@ -17,14 +18,13 @@
 						<img src="public/images/GPM-logo.svg" width=500 height=500 />
 
 						<div class="input-container">
-							<form action="script-here.php">
-
+							<form>
 								<input type="text" name="searchbox" placeholder="enter location...">
-
+								<ul class="suggestions">
+								</ul>
+								<button class="go-button"></button>
 							</form>
-							<button class="go-button">
 
-							</button>
 						</div>
 
 					</div>
