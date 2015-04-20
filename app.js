@@ -6,11 +6,11 @@ var express = require('express');
 var app = express();
 
 
-app.use(express.static('public'));
-app.use(express.static('data'));
+app.use(express.static(__dirname + '/public'));
+app.use('/data', express.static(__dirname + '/data'));
 
 app.get('/*', function(req, res){
-	res.sendFile('./index.html');
+	res.sendFile(path.resolve(__dirname, './index.html'));
 });
 
 

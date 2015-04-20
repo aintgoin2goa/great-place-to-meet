@@ -7,7 +7,7 @@ watch: build
 
 
 run:
-	nodemon ./server/app.js
+	nodemon ./app.js
 
 deploy:
 	git push heroku master

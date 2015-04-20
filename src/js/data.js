@@ -9,7 +9,7 @@ function load(name){
 		return Promise.resolve(__cache[name]);
 	}
 
-	return fetch(name+'.json')
+	return fetch('/data/' +name+'.json')
 		.then(function(response){
 			return response.json();
 		}).then(function(json){
