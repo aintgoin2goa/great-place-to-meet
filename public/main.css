@@ -68,11 +68,6 @@
       display: inline;
       text-align: left;
       -webkit-margin-start: 0; }
-    #place .info dd:after {
-      content: '';
-      display: block;
-      height: 0;
-      width: 0; }
   #place .text {
     float: left;
     width: 350px;
