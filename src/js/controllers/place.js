@@ -30,6 +30,7 @@ function place(name){
 		$('#splash').removeClass('visible');
 		var ill = getIllustration();
 		$('.illustration').css('background-image', 'url(' + ill + ')');
+		$(window).scroll(0,0);
 		setTimeout(function(){
 			$('#place').addClass('visible');
 		},0);
