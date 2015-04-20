@@ -14,6 +14,7 @@ body {
   background-color:white;
   padding-bottom: 2em;
 
+
   .illustration{
 	width:450px;
 	height:450px;
@@ -22,6 +23,22 @@ body {
 	position:absolute;
 	background: center center no-repeat;
 	background-size:contain;
+  }
+
+  .hazard{
+	position: absolute;
+	width:750px;
+	height:750px;
+	left:0;
+	bottom:0;
+	opacity:0.6;
+	background:url(images/hazard-pink.svg) center center no-repeat;
+	background-size:contain;
+	@include transform(translate3d(-25%, 15%, 0));
+  }
+
+  .text-container{
+	overflow: hidden;
   }
 
   header{

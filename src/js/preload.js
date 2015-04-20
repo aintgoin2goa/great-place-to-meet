@@ -6,8 +6,11 @@ var images = [
 	'back-button.svg',
 	'GPM-logo-white.svg',
 	'hazard-purple.svg',
+	'hazard-pink.svg',
 	'illustrations/ill1-cup.svg',
-	'illustrations/ill2-teacup.svg'
+	'illustrations/ill2-teacup.svg',
+	'illustrations/ill3-beerkeller.svg',
+	'illustrations/ill4-stacked-cups.svg'
 ];
 
 function preloadImage(src){

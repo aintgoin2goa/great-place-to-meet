@@ -5,7 +5,9 @@ var $ = require('jquery');
 
 var illustrations = [
 	'public/images/illustrations/ill1-cup.svg',
-	'public/images/illustrations/ill2-teacup.svg'
+	'public/images/illustrations/ill2-teacup.svg',
+	'public/images/illustrations/ill3-beerkeller.svg',
+	'public/images/illustrations/ill4-stacked-cups.svg'
 ];
 
 var $container;
