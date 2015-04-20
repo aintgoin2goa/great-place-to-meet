@@ -28,6 +28,8 @@ body {
 	height:150px;
 	background-color:$pink;
 	overflow: hidden;
+	@include transition(all 0.3s ease-out);
+	@include transform(translate3d(0,-100%,0));
 
 	.logo{
 	  	width:115px;
@@ -55,6 +57,8 @@ body {
 	width:720px;
 	height:405px;
 	position:relative;
+	@include transition(all 0.5s linear 1s);
+	opacity:0;
 
 	@include respond-min(1024px){
 	  width:720px;
@@ -68,6 +72,7 @@ body {
 	  height:100%;
 	  top:0;
 	  left:0;
+
 	}
 
 	.img-bg{
@@ -90,12 +95,16 @@ body {
 	color:$pink;
 	font-size:$heading-font-size;
 	text-transform: uppercase;
+	@include transition(all 0.75s ease-out);
+	@include transform(translate3d(-75px,0,0));
   }
 
   .info{
 	float:left;
 	width:150px;
 	margin:0 0 0 110px;
+	@include transition(all 0.5s ease-out);
+	@include transform(translate3d(-10px,0,0));
 
 	h2{
 	  margin:0 0 30px 0;
@@ -123,6 +132,8 @@ body {
 	font-size: $base-font-size;
 	color:$brown;
 	line-height:1.5em;
+	@include transition(all 0.5s ease-out);
+	@include transform(translate3d(10px,0,0));
 
 	p:first-child{
 	  margin-top:0;
@@ -143,6 +154,17 @@ body {
   &.visible{
 	opacity:1;
 	@include transform(translate3d(0,0,0));
+
+	& header,
+	& .info,
+	& .text,
+	& h1{
+	  @include transform(translate3d(0,0,0));
+	}
+
+	.main-img{
+	  opacity: 1;
+	}
   }
 
 

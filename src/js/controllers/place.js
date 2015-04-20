@@ -25,10 +25,12 @@ function place(name){
 
 	data.load(name).then(function(placeData){
 		render('place-template', $container, placeData);
-		$('#splash').removeClass('finished visible');
+		$('#splash').removeClass('visible');
 		var ill = getIllustration();
-		$('#place').addClass('visible');
 		$('.illustration').css('background-image', 'url(' + ill + ')');
+		setTimeout(function(){
+			$('#place').addClass('visible');
+		},0);
 	});
 }
 
