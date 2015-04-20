@@ -1,0 +1,14 @@
+@import 'bourbon/bourbon';
+
+@mixin respond-min($size) {
+  @media only screen and (min-width: $size){ @content;}
+}
+
+@import 'place';
+
+
+body{
+  font-size: $base-font-size;
+}
+
+

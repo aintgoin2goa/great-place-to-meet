@@ -1,0 +1,122 @@
+@import 'variables';
+
+#place{
+
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  overflow: hidden;
+  background-color:white;
+  padding-bottom: 2em;
+
+  header{
+	width:100%;
+	height:150px;
+	background-color:$pink;
+	overflow: hidden;
+
+	.logo{
+	  	width:115px;
+	  	height:100px;
+	  	background-size: cover;
+	  	float:right;
+	  margin-top:25px;
+	  margin-right:25px;
+	  background: url(images/GPM-logo-white.svg) center center no-repeat;
+	}
+
+	.back{
+	  float:left;
+	  width:70px;
+	  height:50px;
+	  margin-left:25px;
+	  margin-top:50px;
+	  background-size: cover;
+	}
+
+  }
+
+  .main-img{
+	margin-top:-60px;
+	width:520px;
+	height:293px;
+	position:relative;
+
+	@include respond-min(1024px){
+	  width:720px;
+	  height:405px;
+	}
+
+
+	img{
+		position:absolute;
+	  width:100%;
+	  height:100%;
+	  top:0;
+	  left:0;
+	}
+
+	.img-bg{
+	  background: url(images/hazard-purple.svg) center center no-repeat;
+	  background-size:cover;
+	  display:block;
+	  position:absolute;
+	  width:100%;
+	  height:100%;
+	  top:-30px;
+	  left:30px;
+	  opacity:0.5;
+	}
+  }
+
+
+  h1{
+	margin:20px 0 60px 110px;
+	color:$pink;
+	font-size:$heading-font-size;
+  }
+
+  .info{
+	float:left;
+	width:150px;
+	margin:0 0 0 110px;
+
+	h2{
+	  margin:0 0 30px 0;
+	}
+
+	dt{
+	  display:inline;
+	  font-weight:bold;
+	  padding-right:1em;
+	}
+
+	dd{
+	  display: inline;
+	  text-align:left;
+	  -webkit-margin-start:0;
+	}
+
+	dd:after{
+	  content:'';
+	  display:block;
+	  height:0;
+	  width:0;
+	}
+  }
+
+  .text{
+	float:left;
+	width:350px;
+	font-size: $base-font-size;
+	color:$brown;
+	line-height:1.5em;
+
+	p:first-child{
+	  margin-top:0;
+	}
+  }
+
+
+}

@@ -10,30 +10,40 @@
 <body>
 	<section id="splash"></section>
 
-	<section id="place"></section>
+	<section id="place">
+		<header>
+			<a href="javascript:void(0)" data-href="home" class="back internal"></a>
+			<span class="logo"></span>
+		</header>
+		<div id="place-content"></div>
+	</section>
 
 	<script type="text/x-handlebars-template" id="place-template">
 		<div class="main-img">
+			<div class="img-bg"></div>
 			<img src="{{image}}" alt="{{title}}" title="{{title}}" />
 		</div>
 		<h1>{{title}}</h1>
-		<h2>{{city}}</h2>
-		<dl class="info">
-			<dt>Where</dt>
-			<dd>{{where}}</dd>
+		<div class="info">
+			<h2>{{city}}</h2>
+			<dl>
+				<dt>Where</dt>
+				<dd>{{where}}</dd>
 
-			<dt>WiFi</dt>
-			<dd>{{bool wifi}}</dd>
+				<dt>WiFi</dt>
+				<dd>{{bool wifi}}</dd>
 
-			<dt>Plug Sockets</dt>
-			<dd>{{bool plugSockets}}</dd>
+				<dt>Plug Sockets</dt>
+				<dd>{{bool plugSockets}}</dd>
 
-			<dt>Coffee</dt>
-			<dd>{{bool coffee}}</dd>
+				<dt>Coffee</dt>
+				<dd>{{bool coffee}}</dd>
 
-			<dt>Privacy Points</dt>
-			<dd>{{privacyPoints privacy}}</dd>
-		</dl>
+				<dt>Privacy Points</dt>
+				<dd>{{privacyPoints privacy}}</dd>
+			</dl>
+		</div>
+
 
 		<div class="text">
 			{{#each text}}

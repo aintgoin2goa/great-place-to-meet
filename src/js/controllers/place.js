@@ -7,11 +7,13 @@ var $container;
 
 function place(name){
 	if(!$container){
-		$container = $('#place');
+		$container = $('#place-content');
 	}
 
 	data.load(name).then(function(placeData){
 		render('place-template', $container, placeData);
+		$('#splash').removeClass('visible');
+		$('#place').addClass('visible');
 	});
 }
 

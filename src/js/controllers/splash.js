@@ -1,3 +1,8 @@
-/**
- * Created by paul.i.wilson on 20/04/2015.
- */
+'use strict';
+
+function splash(){
+	$('#place').removeClass('visible');
+	$('#splash').addClass('visible');
+}
+
+module.exports = splash;
