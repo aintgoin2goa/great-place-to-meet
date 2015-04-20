@@ -1,1 +1,1 @@
-web: forever server/app.js
+web: forever ./app.js
