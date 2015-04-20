@@ -9,7 +9,7 @@ var cwd = process.cwd();
 
 
 app.use(express.static('public'));
-//app.use('/data', express.static(cwd + '/data'));
+app.use('/data', express.static('data'));
 
 app.get('/*', function(req, res){
 

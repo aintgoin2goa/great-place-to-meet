@@ -34,7 +34,7 @@ function preload(){
 		}));
 	}).then(function(){
 		return Promise.all(images.map(function(img){
-			return preloadImage('/public/images/' + img);
+			return preloadImage('/images/' + img);
 		}))
 	}).catch(function(err){
 		console.error(err);
