@@ -22,7 +22,9 @@ function preloadImage(src){
 function preload(){
 	return Promise.all([
 		data.load('fu-lu-shou'),
-		data.load('rangoon-tea-house')
+		data.load('rangoon-tea-house'),
+		data.load('oosten'),
+		data.load('cuckoos-nest')
 	]).then(function(data){
 		return Promise.all(data.map(function(item){
 			return preloadImage(item.image);

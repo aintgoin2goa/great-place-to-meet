@@ -24,7 +24,6 @@ function search(value){
 	var results = [];
 	Object.keys(__cache).forEach(function(key){
 		var item = __cache[key];
-		console.log(item);
 		if(item.title.toLowerCase().indexOf(value) > -1 ||
 			item.city.toLowerCase().indexOf(value) > -1 ||
 			item.where.toLowerCase().indexOf(value) > -1){
