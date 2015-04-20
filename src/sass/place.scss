@@ -14,6 +14,16 @@ body {
   background-color:white;
   padding-bottom: 2em;
 
+  .illustration{
+	width:450px;
+	height:450px;
+	right:25px;
+	top:200px;
+	position:absolute;
+	background: center center no-repeat;
+	background-size:contain;
+  }
+
   header{
 	height:150px;
 	background-color:$pink;
