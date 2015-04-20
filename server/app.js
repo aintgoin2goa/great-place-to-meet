@@ -4,6 +4,9 @@ var path = require('path');
 var express = require('express');
 var app = express();
 
+console.log(__dirname);
+
+
 app.use('/public', express.static(path.resolve(__dirname + '/../public/')));
 app.use('/data', express.static(path.resolve(__dirname + '/../data/')));
 
