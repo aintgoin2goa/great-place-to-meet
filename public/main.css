@@ -1,3 +1,6 @@
+body {
+  font-family: 'Ropa Sans', helvetica, sans-serif; }
+
 #place {
   position: absolute;
   top: 0;
@@ -8,7 +11,7 @@
   padding-bottom: 2em; }
   #place header {
     height: 150px;
-    background-color: #D4145A;
+    background-color: #d4145a;
     overflow: hidden; }
     #place header .logo {
       width: 115px;
@@ -52,9 +55,11 @@
       left: 30px;
       opacity: 0.5; }
   #place h1 {
-    margin: 20px 0 60px 110px;
-    color: #D4145A;
-    font-size: 4.85714em; }
+    font-family: 'Six Caps', helvetica, sans-serif;
+    margin: 0 0 60px 110px;
+    color: #d4145a;
+    font-size: 5.55556em;
+    text-transform: uppercase; }
   #place .info {
     float: left;
     width: 150px;
@@ -71,11 +76,12 @@
   #place .text {
     float: left;
     width: 350px;
-    font-size: 14px;
+    font-size: 18px;
     color: #534741;
     line-height: 1.5em; }
     #place .text p:first-child {
       margin-top: 0; }
 
 body {
-  font-size: 14px; }
+  font-size: 18px;
+  color: #534741; }
