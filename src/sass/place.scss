@@ -1,5 +1,9 @@
 @import 'variables';
 
+body {
+	font-family: 'Ropa Sans', helvetica, sans-serif;
+}
+
 #place{
 
   position:absolute;
@@ -71,9 +75,11 @@
 
 
   h1{
-	margin:20px 0 60px 110px;
+	font-family: 'Six Caps', helvetica, sans-serif;
+	margin:0 0 60px 110px;
 	color:$pink;
 	font-size:$heading-font-size;
+	text-transform: uppercase;
   }
 
   .info{
@@ -100,7 +106,8 @@
 
   .text{
 	float:left;
-	width:350px;
+	margin: 0 0 0 100px;
+    width: 500px;
 	font-size: $base-font-size;
 	color:$brown;
 	line-height:1.5em;
