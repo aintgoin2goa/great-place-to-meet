@@ -15,7 +15,9 @@ app.use('/data', express.static(path.resolve(__dirname + '/../data/')));
 app.get('/*', function(req, res){
 	if(req.url.indexOf('public') > -1){
 		res.sendFile(path.resolve(__dirname, req.url));
+		return;
 	}
+
 	res.sendFile(path.resolve(__dirname, '../index.html'));
 });
 
