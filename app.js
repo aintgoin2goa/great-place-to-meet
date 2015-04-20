@@ -8,14 +8,14 @@ var app = express();
 var cwd = process.cwd();
 
 
-app.use(express.static(cwd + '/public'));
-app.use('/data', express.static(cwd + '/data'));
+app.use(express.static('public'));
+//app.use('/data', express.static(cwd + '/data'));
 
 app.get('/*', function(req, res){
 
-	console.log('HERE %s', req.url);
 	if(req.url.indexOf('data') > -1 || req.url.indexOf('public') > -1){
-		res.sendFile(path.resolve('.' + req.url));
+		res.sendStatus(404);
+		return;
 	}
 	res.sendFile(path.resolve('./index.html'));
 });
