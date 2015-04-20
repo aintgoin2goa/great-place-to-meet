@@ -25,7 +25,7 @@ function place(name){
 
 	data.load(name).then(function(placeData){
 		render('place-template', $container, placeData);
-		$('#splash').removeClass('visible');
+		$('#splash').removeClass('finished visible');
 		var ill = getIllustration();
 		$('#place').addClass('visible');
 		$('.illustration').css('background-image', 'url(' + ill + ')');

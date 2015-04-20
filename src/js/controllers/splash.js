@@ -4,9 +4,9 @@ var $ = require('jquery');
 var inited = false;
 
 function splash(){
-	$('#place').removeClass('visible');
+	$('#place').removeClass('finished visible');
 	$('#splash').addClass('visible');
-
+	$('#place-content').empty();
 	if(inited){
 		return;
 	}
