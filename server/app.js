@@ -13,7 +13,9 @@ app.use('/public', express.static(path.resolve(__dirname + '/../public/')));
 app.use('/data', express.static(path.resolve(__dirname + '/../data/')));
 
 app.get('/*', function(req, res){
-	debug('Received request for %s', req.url);
+	if(req.url.indexOf('public') > -1){
+		res.sendFile(path.resolve(__dirname, req.url));
+	}
 	res.sendFile(path.resolve(__dirname, '../index.html'));
 });
 
