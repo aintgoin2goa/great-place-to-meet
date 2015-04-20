@@ -24,12 +24,16 @@ function onPopState(e){
 function init(){
 	window.addEventListener('popstate', onPopState);
 	$(document.body).on('click', 'a.internal', function(e){
-		var name = e.target.data.href;
+		e.preventDefault();
+		var name = e.target.dataset.href;
 		if(name){
 			route(name);
 		}
 	});
-	route('rangoon-tea-house');
+	$(document.body).on('route', function(e, name){
+		route(name);
+	});
+	route('home');
 }
 
 module.exports = {

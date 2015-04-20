@@ -67,7 +67,7 @@
 	}
 
 	.img-bg{
-	  background: url(images/hazard-purple.svg) center center no-repeat;
+	  background: url(../images/hazard-purple.svg) center center no-repeat;
 	  background-size:cover;
 	  display:block;
 	  position:absolute;
@@ -118,6 +118,15 @@
 	p:first-child{
 	  margin-top:0;
 	}
+  }
+
+  @include transition(all 0.5s linear);
+  opacity:0;
+  @include transform(translate3d(0,0,-25px));
+
+  &.visible{
+	opacity:1;
+	@include transform(translate3d(0,0,0));
   }
 
 
