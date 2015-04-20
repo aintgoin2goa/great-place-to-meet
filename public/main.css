@@ -7,14 +7,13 @@
   background-color: white;
   padding-bottom: 2em; }
   #place header {
-    width: 100%;
     height: 150px;
     background-color: #D4145A;
     overflow: hidden; }
     #place header .logo {
       width: 115px;
       height: 100px;
-      background-size: cover;
+      background-size: contain;
       float: right;
       margin-top: 25px;
       margin-right: 25px;
@@ -27,9 +26,9 @@
       margin-top: 50px;
       background-size: cover; }
   #place .main-img {
-    margin-top: -60px;
-    width: 520px;
-    height: 293px;
+    margin-top: -30px;
+    width: 720px;
+    height: 405px;
     position: relative; }
     @media only screen and (min-width: 1024px) {
       #place .main-img {
