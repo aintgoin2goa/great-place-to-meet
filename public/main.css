@@ -6,6 +6,14 @@
   overflow: hidden;
   background-color: white;
   padding-bottom: 2em; }
+  #place .illustration {
+    width: 450px;
+    height: 450px;
+    right: 25px;
+    top: 200px;
+    position: absolute;
+    background: center center no-repeat;
+    background-size: contain; }
   #place header {
     height: 150px;
     background-color: #D4145A;
