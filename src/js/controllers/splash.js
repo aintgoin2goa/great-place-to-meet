@@ -18,6 +18,7 @@ function splash(){
 	$('#place').removeClass('finished visible');
 	$('#splash').addClass('visible');
 	$('#place-content').empty();
+	$('#loader').css('display','none');
 	if(inited){
 		$suggestions.empty();
 		$searchBox.val('');
