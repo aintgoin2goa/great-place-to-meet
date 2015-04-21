@@ -43,6 +43,8 @@ body {
 
   .text-container{
 	overflow: hidden;
+	position:relative;
+	z-index:10;
   }
 
   header{
@@ -166,13 +168,21 @@ body {
 
   .text{
 	float:left;
-	margin: 0 0 0 100px;
-    width: 500px;
+	padding: 0 10px;
+    width: 100%;
+	box-sizing: border-box;
 	font-size: $base-font-size;
 	color:$brown;
 	line-height:1.5em;
 	@include transition(all 0.5s ease-out);
 	@include transform(translate3d(10px,0,0));
+
+	@include respond-min($breakpoint-m){
+	  float:left;
+	  margin: 0 0 0 100px;
+	  padding:0;
+	  width: 500px;
+	}
 
 	p:first-child{
 	  margin-top:0;

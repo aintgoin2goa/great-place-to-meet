@@ -44,15 +44,22 @@
   }
 
   .GPM-logo-container {
-	width:500px;
-	height:550px;
+	width:100%;
+	max-width:500px;
+
+	img{
+	  width:100%;
+	  height:auto;
+	}
   }
 
 
 
 
   .input-container {
-	width:500px;
+	width:100%;
+	box-sizing: border-box;
+	max-width:500px;
 	position: relative;
   }
 
@@ -62,7 +69,8 @@
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 	height:40px;
-	width:467px;
+	width:100%;
+	max-width:467px;
 	padding:5px 15px;
 	font-family: Helvetica, sans-serif;
 	font-size: 24px;

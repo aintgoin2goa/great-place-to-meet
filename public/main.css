@@ -39,7 +39,9 @@ body {
     -ms-transform: translate3d(-25%, 15%, 0);
     transform: translate3d(-25%, 15%, 0); }
   #place .text-container {
-    overflow: hidden; }
+    overflow: hidden;
+    position: relative;
+    z-index: 10; }
   #place header {
     height: 150px;
     background-color: #D4145A;
@@ -140,8 +142,9 @@ body {
       margin: 0 0 8px 0; }
   #place .text {
     float: left;
-    margin: 0 0 0 100px;
-    width: 500px;
+    padding: 0 10px;
+    width: 100%;
+    box-sizing: border-box;
     font-size: 18px;
     color: #534741;
     line-height: 1.5em;
@@ -150,6 +153,12 @@ body {
     -webkit-transform: translate3d(10px, 0, 0);
     -ms-transform: translate3d(10px, 0, 0);
     transform: translate3d(10px, 0, 0); }
+    @media only screen and (min-width: 768px) {
+      #place .text {
+        float: left;
+        margin: 0 0 0 100px;
+        padding: 0;
+        width: 500px; } }
     #place .text p:first-child {
       margin-top: 0; }
     #place .text a {
@@ -217,16 +226,22 @@ body {
     -ms-flex-pack: center;
     justify-content: center; }
   #splash .GPM-logo-container {
-    width: 500px;
-    height: 550px; }
+    width: 100%;
+    max-width: 500px; }
+    #splash .GPM-logo-container img {
+      width: 100%;
+      height: auto; }
   #splash .input-container {
-    width: 500px;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 500px;
     position: relative; }
   #splash input {
     border: 1px #999999 solid;
     border-radius: 5px;
     height: 40px;
-    width: 467px;
+    width: 100%;
+    max-width: 467px;
     padding: 5px 15px;
     font-family: Helvetica, sans-serif;
     font-size: 24px;
