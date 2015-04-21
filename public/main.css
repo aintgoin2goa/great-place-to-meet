@@ -277,12 +277,3 @@ body {
 
 html {
   min-height: 100%; }
-
-#loader {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: #FFF url(images/loader.gif) center center no-repeat;
-  background-size: 128px 128px; }
