@@ -22,7 +22,10 @@ body {
     top: 650px;
     position: absolute;
     background: center center no-repeat;
-    background-size: contain; }
+    background-size: contain;
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    opacity: 0; }
     @media only screen and (min-width: 1024px) {
       #place .illustration {
         top: 200px; } }
@@ -174,7 +177,7 @@ body {
       -webkit-transform: translate3d(0, 0, 0);
       -ms-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0); }
-    #place.visible .main-img {
+    #place.visible .main-img, #place.visible .illustration {
       opacity: 1; }
 
 #splash {
