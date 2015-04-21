@@ -4,10 +4,10 @@ var render = require('../render');
 var $ = require('jquery');
 
 var illustrations = [
-	'public/images/illustrations/ill1-cup.svg',
-	'public/images/illustrations/ill2-teacup.svg',
-	'public/images/illustrations/ill3-beerkeller.svg',
-	'public/images/illustrations/ill4-stacked-cups.svg'
+	'images/illustrations/ill1-cup.svg',
+	'images/illustrations/ill2-teacup.svg',
+	'images/illustrations/ill3-beerkeller.svg',
+	'images/illustrations/ill4-stacked-cups.svg'
 ];
 
 var $container;
@@ -30,7 +30,7 @@ function place(name){
 		$('#splash').removeClass('visible');
 		var ill = getIllustration();
 		$('.illustration').css('background-image', 'url(' + ill + ')');
-		$(window).scroll(0,0);
+		window.scrollTo(0,0);
 		setTimeout(function(){
 			$('#place').addClass('visible');
 		},0);
