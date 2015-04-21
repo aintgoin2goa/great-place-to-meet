@@ -27,11 +27,13 @@ function place(name){
 
 	data.load(name).then(function(placeData){
 		render('place-template', $container, placeData);
-		$('#splash').removeClass('visible');
 		var ill = getIllustration();
 		$('.illustration').css('background-image', 'url(' + ill + ')');
+
+
 		window.scrollTo(0,0);
 		setTimeout(function(){
+			$('#splash').removeClass('visible');
 			$('#place').addClass('visible');
 		},0);
 	});
